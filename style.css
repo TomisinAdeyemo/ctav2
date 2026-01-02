@@ -1,0 +1,216 @@
+:root {
+    --pink-bg: #f8a5c2;
+    --olive-bg: #c4c8a2;
+    --dark-pink: #d44d7d;
+    --blue-accent: #5da2d5;
+    --text-dark: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--olive-bg);
+    font-family: 'Space Mono', monospace;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+/* --- Header & Ticker --- */
+.main-header {
+    background-color: var(--pink-bg);
+    text-align: center;
+    border-bottom: 2px solid var(--text-dark);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.main-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 10vw, 6rem);
+    color: var(--dark-pink);
+    margin: 20px 0;
+}
+
+.ticker-wrap {
+    background-color: var(--dark-pink);
+    color: white;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* --- About Section --- */
+.about-section {
+    padding: 60px 5%;
+}
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.profile-oval {
+    width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid white;
+}
+
+.profile-oval img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-size: 0.85rem;
+    margin-top: 20px;
+}
+
+/* --- Product Drops --- */
+.drop-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 60px 5%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.oval-title {
+    border: 2px solid var(--blue-accent);
+    color: var(--blue-accent);
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 20px 0;
+    font-family: 'Syne', sans-serif;
+    text-transform: uppercase;
+}
+
+.art-frame {
+    text-align: center;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.art-frame img {
+    width: 100%;
+    border: 15px solid #eaeae1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.art-frame:hover {
+    transform: translateY(-15px) scale(1.02);
+}
+
+.drop-gallery {
+    display: flex;
+    gap: 30px;
+}
+
+/* --- Shipping Section --- */
+.shipping-section {
+    background-color: var(--pink-bg);
+    padding: 60px 5%;
+}
+
+.shipping-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-input textarea {
+    width: 300px;
+    height: 80px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.checkered-box {
+    width: 100px;
+    height: 100px;
+    background-image: conic-gradient(#d44d7d 90deg, #f8a5c2 90deg 180deg, #d44d7d 180deg 270deg, #f8a5c2 270deg);
+    background-size: 20px 20px;
+}
+
+.shipping-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+    border-top: 1px solid black;
+}
+
+.grid-cell {
+    padding: 20px;
+    border-right: 1px solid black;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+/* --- Footer --- */
+.footer-section {
+    background-color: var(--pink-bg);
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.footer-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 8vw, 5rem);
+    font-style: italic;
+    color: #5c3c3c;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 20px;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 900px) {
+    .about-container, .drop-item, .footer-layout {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .bio-columns, .shipping-grid {
+        grid-template-columns: 1fr;
+    }
+    .drop-gallery {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
