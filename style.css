@@ -127,10 +127,9 @@ body {
     border: 2px solid var(--blue-accent);
     color: var(--blue-accent);
     padding: 15px 30px;
-    border-radius: 50px;
+    border-radius: 50%;
     display: inline-block;
     margin: 20px 0;
-    font-family: 'Syne', sans-serif;
     text-transform: uppercase;
 }
 
