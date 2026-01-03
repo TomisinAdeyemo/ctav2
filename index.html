@@ -4,127 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chika The Artist | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Space+Mono:ital@0;1&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="main-header">
-        <nav class="top-nav">
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <a href="#">Shipping and Delivery</a>
-        </nav>
+        <div class="header-top-bar container">
+            <div class="header-logo-container">
+                <img src="logo-icon.png" alt="★" class="header-icon" loading="lazy">
+            </div>
+            <nav class="top-nav">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#" id="contactBtn">Contact</a>
+                <a href="#">Shipping</a>
+            </nav>
+        </div>
+        
         <h1 class="main-logo">Chika the ARTIST</h1>
+        
         <div class="ticker-wrap">
             <div class="ticker">
-                <span>shop new in • shop new in • shop new in • shop new in • shop new in • shop new in • shop new in • shop new in • </span>
+                <span>shop new in • shop new in • shop new in • shop new in • shop new in • shop new in • shop new in • </span>
             </div>
         </div>
     </header>
 
-    <section class="about-section">
-        <div class="about-container">
+    <section class="about-section reveal">
+        <div class="container about-container">
             <div class="profile-area">
                 <div class="profile-oval">
-                    <img src="./IMG_4576.JPG" alt="Chika">
+                    <img src="profile.jpg" alt="Chika" loading="lazy">
                 </div>
-                <div class="speech-bubble">"Art is how I express... what words cannot get."</div>
+                <div class="speech-bubble">"Art is how I express..."</div>
             </div>
             <div class="about-content">
                 <h2 class="section-title">ABOUT ME</h2>
-                <h3 class="intro-heading">I’m Chika, and I make art, super original, I know.</h3>
                 <div class="bio-columns">
-                    <p>When I started everything felt synonymous... now I enjoy the process more than the end product. I like the flow. It’s what I want to see in the world. I hope you enjoy browsing.</p>
-                    <p>Everything is moving fast and I’m glad to be able to pause for a second. I hope you find something that makes you smile. Chika is art, art is Chika. Keep your dreams alive, always find inspiration.</p>
-                    <p>I enjoy textures, different styles of art, expressions in many colors, and the freedom to create our own stories. Grab a print and own a bit of heart in your room.</p>
+                    <p>I’m Chika, and I make art, super original, I know. Everything felt synonymous... now I enjoy the process.</p>
+                    <p>I hope you find something that makes you smile. Chika is art, art is Chika. Keep your dreams alive.</p>
+                    <p>Grab a print and own a bit of heart in your room. Enjoy browsing the latest collection.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <main class="drops-container">
-        <article class="drop-item">
+    <main class="container">
+        <section class="drop-item reveal">
             <div class="drop-meta">
                 <h2 class="drop-label">The latest drops</h2>
                 <div class="oval-title">THROUGH THE SOURCE?</div>
-                <p class="drop-price">available original and print. <br> 20 x 24 on canvas. <br> $400.00 original / $10.00 print</p>
+                <p class="drop-price">$400.00 original / $10.00 print</p>
             </div>
             <div class="drop-gallery">
-                <div class="art-frame">
-                    <span>Original</span>
-                    <img src="./IMG_0104.jpeg" alt="Artwork Original">
-                </div>
-                <div class="art-frame">
-                    <span>Print</span>
-                    <img src="./IMG_0104.jpeg" alt="Artwork Print">
-                </div>
+                <div class="art-frame"><span>Original</span><img src="art1.jpg" alt="Art" loading="lazy"></div>
+                <div class="art-frame"><span>Print</span><img src="art2.jpg" alt="Art" loading="lazy"></div>
             </div>
-        </article>
+        </section>
 
-        <article class="drop-item">
+        <section class="drop-item reveal">
             <div class="drop-meta">
                 <h2 class="drop-label">The latest drops</h2>
-                <div class="oval-title blue">contains eyes</div>
-                <p class="drop-price">available original and print. <br> $400.00 original / $10.00 print</p>
+                <div class="oval-title blue">CONTAINS EYES</div>
+                <p class="drop-price">$400.00 original / $10.00 print</p>
             </div>
             <div class="drop-gallery">
-                <div class="art-frame">
-                    <span>Original</span>
-                    <img src="./IMG_0104.jpeg" alt="Artwork Original">
-                </div>
-                <div class="art-frame">
-                    <span>Print</span>
-                    <img src="./IMG_0104.jpeg" alt="Artwork Print">
-                </div>
+                <div class="art-frame"><span>Original</span><img src="art3.jpg" alt="Art" loading="lazy"></div>
+                <div class="art-frame"><span>Print</span><img src="art4.jpg" alt="Art" loading="lazy"></div>
             </div>
-        </article>
+        </section>
     </main>
 
-    <section class="shipping-section">
-        <div class="shipping-top">
-            <div class="shipping-title-box">
-                <h2 class="shipping-heading">Shipping and delivery</h2>
-                <div class="address-input">
+    <section class="shipping-section reveal">
+        <div class="container">
+            <div class="shipping-header">
+                <h2>Shipping and delivery</h2>
+                <div class="address-box">
                     <label>Enter delivery address here</label>
-                    <textarea></textarea>
+                    <textarea placeholder="Type here..."></textarea>
                 </div>
             </div>
-            <div class="checkered-box"></div>
+            <div class="shipping-grid">
+                <div class="grid-cell">Select a product / fit as well as colors to check availability.</div>
+                <div class="grid-cell">Customization & Color... To confirm choices and price changes.</div>
+                <div class="grid-cell">Deposit & Next... Card (no crypto). Use the code to track.</div>
+                <div class="grid-cell">Final Agreement... Confirm all choices are correct.</div>
+                <div class="grid-cell">Delivery... Items take 2-10 business days depending on location.</div>
+            </div>
         </div>
-
-        <div class="shipping-grid">
-            <div class="grid-cell">Select a product / fit as well as colors to check on availability...</div>
-            <div class="grid-cell">Customization & Color... To confirm your choices and possible price changes...</div>
-            <div class="grid-cell">Deposit & Next... Card (no crypto). Use the code to check the stage...</div>
-            <div class="grid-cell">Final Agreement... Confirm that all choices are correct for completion...</div>
-            <div class="grid-cell">Delivery... Items take about 2-10 business days depending on location...</div>
-        </div>
-        <p class="disclaimer">*considerations might take longer due to or for depending on the place</p>
     </section>
 
     <footer class="footer-section">
-        <div class="footer-layout">
-            <div class="contact-links">
-                <h3>Contact</h3>
-                <p>Email: hi@chika.art</p>
-                <p>Instagram: @chika_artist</p>
-            </div>
-            <div class="vintage-phone">
-    <img src="./Screenshot 2026-01-02 at 20.47 Background Removed.18.png" 
-         alt="Vintage Phone Icon" 
-         width="200" 
-         height="auto">
-</div>
-
-            <div class="hit-me-up">
-                <h3>Hit me up!</h3>
-                <div class="bubble">Don’t be shy, I love to hear from you!</div>
-            </div>
-        </div>
         <h1 class="footer-logo">chika the artist</h1>
     </footer>
 
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="oval-title blue">Hit me up!</div>
+            <form class="retro-form">
+                <input type="text" placeholder="YOUR NAME" required>
+                <input type="email" placeholder="YOUR EMAIL" required>
+                <textarea placeholder="WHAT'S ON YOUR MIND?"></textarea>
+                <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
