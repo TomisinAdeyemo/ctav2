@@ -677,7 +677,7 @@ body {
   transform:translateX(-50%);
   margin:0;
   font-size:40px;
-  color:cream;
+  color: #fefae0;
   z-index:2;
   text-transform:lowercase;
   text-shadow:0 2px 0 rgba(0,0,0,.08);
