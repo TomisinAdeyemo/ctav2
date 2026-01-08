@@ -441,6 +441,10 @@ body {
 
 /* ===== MOBILE BREAKPOINT ===== */
 @media (max-width: 900px){
+.hero {
+  height: 50vh;
+}
+  
   .hero-top{
     position:static;
     padding:24px;
