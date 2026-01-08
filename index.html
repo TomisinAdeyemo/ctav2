@@ -3,128 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chika The Artist | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Space+Mono:ital@0;1&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-     <link rel="icon" type="image/png" href="./Light pink and dark pink Vintage Elegant Flower Boutique Shop La Londe Logo.PNG">
-  <meta name="description" content="chikatheartist - Bringing creativity, culture, and connection to one global stage."/>
+    <link rel="icon" type="image/png" href="./Light pink and dark pink Vintage Elegant Flower Boutique Shop La Londe Logo.PNG">
     <link rel="stylesheet" href="style.css">
+    <title>Chika The Artist</title>
 </head>
 <body>
 
-    <header class="main-header">
-        <nav class="top-nav">
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <a href="#">Shipping and Delivery</a>
-        </nav>
-        <h1 class="main-logo">Chika the ARTIST</h1>
-        <div class="ticker-wrap">
-            <div class="ticker">
-                <span>shop new in • shop new in • shop new in • shop new in • shop new in • shop new in • shop new in • shop new in • </span>
-            </div>
+  <!-- HEADER -->
+<header class="hero">
+  <div class="hero-top">
+    <a class="brand" href="#">
+      <img src="./Vector.png" alt="Chika The Artist">
+    </a>
+
+    <!-- Hamburger toggle (only shows on mobile) -->
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Desktop nav -->
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About me</a>
+      <a href="#shop">Shop</a>
+      <a class="is-active" href="#contact">Contact</a>
+      <a href="#shipping">Shipping and Delivery</a>
+    </nav>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav id="mobileMenu" class="mobile-nav" aria-label="Mobile Primary">
+    <a href="#about">About me</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+    <a href="#shipping">Shipping and Delivery</a>
+  </nav>
+
+  <div class="hero-center">
+    <img src="./Vector.png" alt="Chika the Artist — ESTD 2025">
+  </div>
+
+  <div class="marquee" aria-label="New in shop marquee">
+    <div class="marquee-track">
+      <span>new in . shop&nbsp;</span><span>new in . shop&nbsp;</span><span>new in . shop&nbsp;</span>
+      <span>new in . shop&nbsp;</span><span>new in . shop&nbsp;</span><span>new in . shop&nbsp;</span>
+    </div>
+    <div class="marquee-track" aria-hidden="true">
+      <span>new in . shop&nbsp;</span><span>new in . shop&nbsp;</span><span>new in . shop&nbsp;</span>
+      <span>new in . shop&nbsp;</span><span>new in . shop&nbsp;</span><span>new in . shop&nbsp;</span>
+    </div>
+  </div>
+</header>
+
+    <section class="about">
+  <div class="about-left">
+    <h5 class="section-label">ABOUT ME</h5>
+
+    <div class="quote">
+      <p>“Art is how I express<br>what I don’t have words for — yet.”</p>
+    </div>
+  </div>
+
+  <div class="about-center">
+    <div class="portrait">
+      <img src="./IMG_4576.JPG" alt="Portrait of Chiza, artist and creative">
+    </div>
+  </div>
+
+  <div class="about-right">
+    <h2 class="about-title">
+      I’m Chiza, and I make art,<br>
+      super original — I know.
+    </h2>
+
+    <div class="about-text">
+      <p>
+        Since I can remember, creativity has always been something that drove me.
+        In school, it was the thing I looked forward to — whether it showed up
+        as singing or sketching.
+      </p>
+
+      <p>
+        I started drawing early on, and I knew almost immediately that it would
+        become an escape for me. Crochet, sketching, experimenting — each became
+        a different mode of expression.
+      </p>
+
+      <p>
+        Over time, those expressions turned into evolving styles, many opinions,
+        and the freedom to create pieces no one asked for — and now, I get to
+        share that with you.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="drops" id="shop">
+  <div class="drops-top">
+    <h2 class="drops-title">The latest drops</h2>
+    <img class="drops-cart" src="./img/cart.png" alt="Cart icon">
+  </div>
+
+  <div class="drops-grid">
+    <!-- LEFT INFO -->
+    <aside class="drops-info">
+      <div class="drops-bubble">
+        <h3>THROUGH<br>TIMES<br>JOURNEY</h3>
+      </div>
+
+      <span class="drops-stem" aria-hidden="true"></span>
+
+      <p class="drops-desc">
+        Abstract original and print<br>
+        yarn and beads on canvas<br>
+        20 x 24 size and dimension<br>
+        $355.55 original<br>
+        $50.00 print
+      </p>
+    </aside>
+
+    <!-- RIGHT IMAGES -->
+    <div class="drops-cards">
+      <article class="drop-card">
+        <h3 class="drop-tag">Original</h3>
+        <img src="./IMG_0104.jpeg" alt="Through Times Journey - Original">
+      </article>
+
+      <article class="drop-card">
+        <h3 class="drop-tag">Print</h3>
+        <img src="./IMG_0104.jpeg" alt="Through Times Journey - Print">
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="shipping">
+  <h2 class="shipping-title">Shipping and delivery</h2>
+
+  <div class="shipping-top">
+    <a href="#" class="address-link">Enter delivery address<br>here</a>
+
+    <img src="./computer.png" alt="Vintage computer illustration" class="shipping-img center-img">
+
+    <img src="./box.png" alt="Package illustration" class="shipping-img right-img">
+  </div>
+
+  <div class="shipping-steps">
+    <div class="step">
+      <p>
+        Submit a Request — Fill out the commission form or contact me directly
+        with your concept, size, and style preferences.
+      </p>
+    </div>
+
+    <div class="step">
+      <p>
+        Consultation & Quote — I’ll review your request and provide a price
+        estimate, timeline, and any design suggestions.
+      </p>
+    </div>
+
+    <div class="step">
+      <p>
+        Deposit & Start — Once the deposit (typically 50%) is received, I’ll
+        begin your project and send progress updates.
+      </p>
+    </div>
+
+    <div class="step">
+      <p>
+        Final Approval — You’ll have a chance to review the completed work
+        before final payment.
+      </p>
+    </div>
+
+    <div class="step">
+      <p>
+        Delivery — Once approved, I’ll deliver your artwork in the requested
+        format (digital file or physical print). Depending on your location,
+        delivery may take 1–2 weeks to 6–8 weeks.
+      </p>
+    </div>
+  </div>
+
+  <p class="shipping-note">
+    commissions might take longer time to create<br>
+    depending on the piece
+  </p>
+</section>
+
+<section class="contact">
+  <!-- TOP AREA -->
+  <div class="contact-top">
+    <div class="contact-left">
+      <h2 class="contact-label">contact</h2>
+
+      <p class="contact-intro">
+        i want to share a<br>
+        piece of my<br>
+        creativity with<br>
+        you.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:youremail@example.com">email</a>
+        <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">instagram</a>
+      </div>
+    </div>
+
+    <!-- BIG PHONE IMAGE (LOCAL) -->
+    <img class="contact-phone" src="./phone.png" alt="Vintage phone illustration">
+
+    <div class="contact-right">
+      <h2 class="contact-hit">Hit me up!</h2>
+
+      <div class="contact-right-stack">
+        <span class="contact-line" aria-hidden="true"></span>
+
+        <img class="contact-computer" src="./computer.png" alt="Computer illustration">
+
+        <div class="contact-bubble">
+          <p>i’m always available<br>to create new<br>experiences for you</p>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
 
-    <section class="about-section">
-        <div class="about-container">
-            <div class="profile-area">
-                <div class="profile-oval">
-                    <img src="IMG_4576.JPG" alt="Chika">
-                </div>
-                <div class="speech-bubble">"Art is how I express... what words cannot get."</div>
-            </div>
-            <div class="about-content">
-                <h2 class="section-title">ABOUT ME</h2>
-                <h3 class="intro-heading">I’m Chika, and I make art, super original, I know.</h3>
-                <div class="bio-columns">
-                    <p>When I started everything felt synonymous... now I enjoy the process more than the end product. I like the flow. It’s what I want to see in the world. I hope you enjoy browsing.</p>
-                    <p>Everything is moving fast and I’m glad to be able to pause for a second. I hope you find something that makes you smile. Chika is art, art is Chika. Keep your dreams alive, always find inspiration.</p>
-                    <p>I enjoy textures, different styles of art, expressions in many colors, and the freedom to create our own stories. Grab a print and own a bit of heart in your room.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- BOTTOM BAND -->
+  <div class="contact-bottom">
+  <img 
+    src="./chikatext.png" 
+    alt="Chika The Artist" 
+    class="contact-brand-img">
+</div>
 
-    <main class="drops-container">
-        <article class="drop-item">
-            <div class="drop-meta">
-                <h2 class="drop-label">The latest drops</h2>
-                <div class="oval-title">THROUGH TIMES JOURNEY</div>
-                <p class="drop-price">available original and print. <br> 20 x 24 on canvas. <br> $400.00 original / $10.00 print</p>
-            </div>
-            <div class="drop-gallery">
-                <div class="art-frame">
-                    <span>Original</span>
-                    <img src="IMG_0104.jpeg" alt="Artwork Original">
-                </div>
-                <div class="art-frame">
-                    <span>Print</span>
-                    <img src="IMG_0104.jpeg" alt="Artwork Print">
-                </div>
-            </div>
-        </article>
+</section>
 
-        <article class="drop-item">
-            <div class="drop-meta">
-                <h2 class="drop-label">The latest drops</h2>
-                <div class="oval-title blue">CORALINE EYES</div>
-                <p class="drop-price">available original and print. <br> $400.00 original / $10.00 print</p>
-            </div>
-            <div class="drop-gallery">
-                <div class="art-frame">
-                    <span>Original</span>
-                    <img src="IMG_0104.jpeg" alt="Artwork Original">
-                </div>
-                <div class="art-frame">
-                    <span>Print</span>
-                    <img src="IMG_0104.jpeg" alt="Artwork Print">
-                </div>
-            </div>
-        </article>
-    </main>
 
-    <section class="shipping-section">
-        <div class="shipping-top">
-            <div class="shipping-title-box">
-                <h2 class="shipping-heading">Shipping and delivery</h2>
-                <div class="address-input">
-                    <label>Enter delivery address here</label>
-                    <textarea></textarea>
-                </div>
-            </div>
-            <div class="checkered-box"></div>
-        </div>
+<script>
+  const btn = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('#mobileMenu');
 
-        <div class="shipping-grid">
-            <div class="grid-cell">Select a product / fit as well as colors to check on availability...</div>
-            <div class="grid-cell">Customization & Color... To confirm your choices and possible price changes...</div>
-            <div class="grid-cell">Deposit & Next... Card (no crypto). Use the code to check the stage...</div>
-            <div class="grid-cell">Final Agreement... Confirm that all choices are correct for completion...</div>
-            <div class="grid-cell">Delivery... Items take about 2-10 business days depending on location...</div>
-        </div>
-        <p class="disclaimer">*considerations might take longer due to or for depending on the place</p>
-    </section>
+  btn.addEventListener('click', () => {
+    const open = btn.classList.toggle('is-open');
+    menu.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
 
-    <footer class="footer-section">
-        <div class="footer-layout">
-            <div class="contact-links">
-                <h3>Contact</h3>
-                <p>Email: hi@chika.art</p>
-                <p>Instagram: @chika_artist</p>
-            </div>
-            <div class="vintage-phone">
-                <img src="Screenshot 2026-01-02 at 20.47 Background Removed.18.png"  alt="Vintage Phone Icon" 
-         width="450" 
-         height="auto">
-            </div>
-            <div class="hit-me-up">
-                <h3>Hit me up!</h3>
-                <div class="bubble">Don’t be shy, I love to hear from you!</div>
-            </div>
-        </div>
-        <h1 class="footer-logo">chika the artist</h1>
-    </footer>
+  // Close menu when a link is clicked (mobile UX)
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('is-open');
+      menu.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'Open menu');
+    });
+  });
+</script>
+
 
 </body>
 </html>
