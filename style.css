@@ -658,8 +658,9 @@ body {
   margin:40px 0 0 0;
   color:var(--blue);
   font-size:22px;
-  line-height:1.05;
+  line-height:1.2;
   text-transform:lowercase;
+  letter-spacing: .5px;
 }
 
 /* right cards */
