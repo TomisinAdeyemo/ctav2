@@ -131,6 +131,7 @@ body {
 .step p {
   font-size: 15px;
   line-height: 1.6;
+  letter-spacing: .5px
 }
 
 .shipping-note {
